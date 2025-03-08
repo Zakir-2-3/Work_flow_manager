@@ -1,0 +1,38 @@
+.workspace__sidebar {
+  width: 234px;
+  height: 100vh;
+  background-color: #27272a;
+  box-shadow: inset -1px 0px 0px 0px #414144;
+  &-projects {
+    &-item {
+      transition: 0.3s ease-in;
+      -webkit-transition: 0.3s ease-in;
+      -moz-transition: 0.3s ease-in;
+      -ms-transition: 0.3s ease-in;
+      -o-transition: 0.3s ease-in;
+    }
+    &-item:hover {
+      background-color: #a1a1a1;
+    }
+    &-btn {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0 16px;
+      padding: 0 13px 0 20px;
+      width: 100%;
+      & img {
+        width: 17px;
+        height: 17px;
+      }
+    }
+    &-title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 8px 0;
+      font-size: 14px;
+    }
+  }
+}

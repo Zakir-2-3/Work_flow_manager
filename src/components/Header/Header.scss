@@ -1,0 +1,86 @@
+.workspace__header {
+  grid-column: span 2;
+  height: 88px;
+  background-color: #27272a;
+  &-settings {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 44px;
+    padding-left: 20px;
+    box-shadow: inset 0px -1px 0px 0px #414144;
+  }
+  &-button:nth-child(2) {
+    margin: 0 30px 0 20px;
+  }
+  &-button:nth-child(3) {
+    margin-right: 28px;
+  }
+  &-button {
+    font-size: 14px;
+    color: #a1a1aa;
+  }
+  &-button--active {
+    position: relative;
+    color: #fff;
+  }
+  &-button--active::before {
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    top: 27px;
+    background-color: #fff;
+    height: 2px;
+    position: absolute;
+    width: 110%;
+  }
+  &-projects {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: inset 0px -1px 0px 0px #414144;
+    &-toggle {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      width: 234px;
+      height: 44px;
+      padding: 0 13px 0 20px;
+      box-shadow: inset -1px 0px 0px 0px #414144;
+      color: #a1a1aa;
+      & p {
+        font-size: 14px;
+        line-height: 1;
+        & span {
+          font-size: 10px;
+        }
+      }
+      & button {
+        display: flex;
+      }
+    }
+    &-project {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      height: 44px;
+      &-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+      }
+      &-item {
+        display: flex;
+        height: 100%;
+        padding: 0 15px;
+        box-shadow: inset -1px 0px 0px 0px #414144;
+      }
+      &-title {
+        font-size: 18px;
+      }
+    }
+  }
+}
