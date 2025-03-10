@@ -1,5 +1,6 @@
 import React from "react";
 
+import { formatNumber } from "../../utils/numberUtils";
 import { ChildRowProps } from "../../types/ChildRowProps";
 
 import tableLevelIcon from "../../assets/icons/table-level-icon.svg";
@@ -50,7 +51,7 @@ const ChildRow: React.FC<ChildRowProps> = ({
             onKeyDown={(e) => onKeyDown(e, childRow.id)}
           />
         ) : (
-          childRow.salary
+          formatNumber(childRow.salary)
         )}
       </td>
       <td className="workspace__table-cell">
@@ -61,7 +62,7 @@ const ChildRow: React.FC<ChildRowProps> = ({
             onKeyDown={(e) => onKeyDown(e, childRow.id)}
           />
         ) : (
-          childRow.equipmentCosts
+          formatNumber(childRow.equipmentCosts)
         )}
       </td>
       <td className="workspace__table-cell">
@@ -72,7 +73,7 @@ const ChildRow: React.FC<ChildRowProps> = ({
             onKeyDown={(e) => onKeyDown(e, childRow.id)}
           />
         ) : (
-          childRow.overheads
+          formatNumber(childRow.overheads)
         )}
       </td>
       <td className="workspace__table-cell">
@@ -83,7 +84,7 @@ const ChildRow: React.FC<ChildRowProps> = ({
             onKeyDown={(e) => onKeyDown(e, childRow.id)}
           />
         ) : (
-          childRow.estimatedProfit
+          formatNumber(childRow.estimatedProfit)
         )}
       </td>
     </tr>
